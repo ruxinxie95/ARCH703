@@ -1,11 +1,6 @@
 """This program creates the minimal surface (soap bubbles) inside of the cubic frame. """
-
-
-
 import rhinoscriptsyntax as rs 
 import random as rd 
-
-
 
 def SurfacePoints(SRF, INTU, INTV,ATTR):
 
