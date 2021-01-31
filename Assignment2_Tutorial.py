@@ -22,6 +22,7 @@ def addBranch(STRCRV, scale, angle, count):
     rs.RotateObject(strLine01, endPt, angle)
 
     #create THIRD branch by mirroring SECOND - strLine02
+    strLine02 = rs.MirrorObject(strLine01, startPt, endPt, True)
 
     #recursively call function using SECOND and THIRD branches
     # if (count < 5):     
