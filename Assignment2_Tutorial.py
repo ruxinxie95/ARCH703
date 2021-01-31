@@ -25,9 +25,9 @@ def addBranch(STRCRV, scale, angle, count):
     strLine02 = rs.MirrorObject(strLine01, startPt, endPt, True)
 
     #recursively call function using SECOND and THIRD branches
-    # if (count < 5):     
-    #     addBranch(StrLine01, (0.75, 0.75, 0.75), 25, count + 1 )
-    #     addBranch(StrLine02, (0.75, 0.75, 0.75), 25, count + 1 )
+    if (count < 5):     
+        addBranch(strLine01, (0.75, 0.75, 0.75), 25, count + 1 )
+        addBranch(StrLine02, (0.75, 0.75, 0.75), 25, count + 1 )
 
 
 
